@@ -1,0 +1,322 @@
+CSS Implementation
+
+1) External File CSS
+2)In-Page CSS
+3)In Line CSS
+
+Selectors
+1) Class Selctor
+2)Id selector
+
+Id have only one value but if we use class 
+we can create so many elements
+
+id attribuite --> #
+class attribute --> .
+
+measurment units
+--> pixels ,percentage
+If we take percentage we have to take according to screen size
+if we take pixels there is no end for that
+
+Borders
+units border-style color
+
+For border we can use 
+dashed,dotted,solid
+
+Text Decoration
+
+ 1) span
+ 2) text-align
+3) word-spacing
+4)letter-spacing
+
+Fonts 
+
+--> font-family
+     font-weight 
+    font size
+     font style
+     font spacing
+
+font-family 
+
+@import url('rom the google fonts')
+* {
+ background-color: red;
+}
+
+font-weight --> it will give thickness for the text
+font-weight:900
+font-weight:bolder;
+
+
+we will not give value in the pixels. if we give also it will not apply
+font-size: x-large;
+font-size: x-small; --> we can give unit to the font size
+font-style: italic;
+letter-spacing: 2px;
+word-spacing: 1px;
+
+box model
+
+1)Margin
+2)Border
+3)padding
+4)content
+
+.message {
+border: 3px solid black;
+width: 300px;
+text-align:center;
+margin:200px;
+padding: 100px;
+}
+
+padding
+
+paddding-top
+padding-right
+padding-bottom
+padding-left
+
+ShortForm
+
+Padding: 10px 5px 20px 15px
+
+it will take units as top,right,bottom,left
+
+Margin
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Margin:10px 5px 20px 15px
+
+BoxSizing - will control the width
+box-sizing: borderbox //it will control the width
+box-sizing: content-box == default
+
+.message {
+  border: 100px solid black;
+  width: 300px;
+  margin: 100px;
+  padding:100px;
+  box-sizing: border-box;
+}
+
+Images in CSS
+
+index.html
+
+<div class="picture-box">
+<img class="men-image" src="" alt=" " >
+ </div>
+
+ .picture-box {
+border: 2px solid black;
+width:300px;
+height:300px;
+ }
+
+.men-image {
+width:100%;
+}
+
+Background-image 
+body {
+background-image: url("");
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+If I want to set a backgroundImage in picture box
+
+border: 2px solid black;
+width: 300px;
+height : 300px;
+background-image: url("");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center;
+
+
+<body>
+<h2>Element Selctors</h2>
+<div>
+<h2 class="simple"> Content </h2>
+<h2>testing color </h2>
+</div>
+</body>
+
+css
+
+h2 {
+color: red
+}
+
+div h2 {
+color: blue;
+border: 1px solid green
+}
+
+div .sample {
+border: 2px solid brown
+}
+
+<div>
+<p>Loreum ipsum color sit amet</p>
+</div>
+
+<div>
+<p id="apple">Fruits</p>
+</div>
+
+descendant selctor
+
+div p {
+background-color: lightCoral;
+}
+
+child selctor
+
+div>#apple {
+background-color: red;
+}
+
+Display 
+
+display: block
+it will occupy 100% width and it will push down the next eleemnt
+display:inline
+it will not apply height and width. all elements are in line.
+display:inline-block
+we can apply measurmentsa and all elements will come in line.
+display:none
+if we apply display:none no element will visible
+
+Position in CSS
+
+position: static(Default)
+position:relative
+position:absolute
+position:fixed
+position:sticky
+
+<body>
+<h1>Positions </h1>
+<div class="list-of-positon">
+<div>Static</div>
+<div>Relative</div>
+<div>Absolute</div>
+<div>Sticky</div>
+</div>
+
+list of positions is parent to all other divs
+
+div {
+position:relative;
+top:200px;
+left:100px;
+}
+
+when we apply position:relative
+based on helpers like top,right,bottom,left we can change the position of child
+
+<body>
+<div class="fruits">
+<div class="apple"></div>
+<div class="apple"></div>
+</div>
+
+</body>
+
+.fruits {
+border: 1px solid black;
+margin: 100px
+}
+
+.apple{
+width:200px;
+height:200px;
+background-color:maroon;
+display:inline-black;
+position:relative;
+left:400px;
+top:400px;
+}
+
+mango{
+width:200px;
+height:200px;
+background-color:maroon;
+display:inline-black;
+}
+
+<body>
+<div class="box-container">
+<div class="box-1"></div>
+<div class="box-2"></div>
+<div class="box-3"></div>
+<div class="box-4"></div>
+</div>
+</body>
+
+.box-container {
+border: 2px solid black;
+width:500px;
+margin:200px;
+padding:50px;
+position: relative;
+}
+
+.box-1 {
+width:100px;
+height:100px;
+display:inline-block;
+position:absolute;
+top:100px;
+}
+
+when we keep position:absolute; it will free from the position 
+where we keep position: relative --> it will treat as a parent
+when we use zIndex:10 --> it will show that element top of the all the elements
+.box-1 {
+width:100px;
+height:100px;
+display:inline-block;
+position:absolute;
+top:100px;
+zIndex: 10;
+}
+if u want to keep down --> we have to use negative value
+zIndex:-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
