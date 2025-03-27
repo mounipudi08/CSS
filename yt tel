@@ -294,6 +294,268 @@ zIndex: 10;
 if u want to keep down --> we have to use negative value
 zIndex:-10
 
+colors --> rgb,hexacode
+to fix the image at particular position
+
+<img src=".jpg" alt="whtasapp" />
+
+.paper img {
+   position:fixed;
+   right:0;
+   bottom:0;
+   width:50px;
+   height:50px;
+  }
+
+I want to fix the navbar, if i scroll the content also navbar should be visible
+if i use position: sticky --> it will take two seperate spaces , two seperate divs
+
+it will not overlay the content
+.nav-bar {
+color:white;
+background-color:gray;
+text-align: center
+position:sticky
+top:0px;
+width:100%;
+height:200px;
+}
+
+.box-2 {
+border: 3px solid black;
+width:200px;
+height:200px;
+display:inline-block;
+border-radius:10px; // it will round the corner
+}
+
+Pseudo Classes
+:hover
+:active
+:focus
+:first-child
+:last-child
+:nth child(n)
+:checked
+
+<body>
+<div class = "test" >
+  <img src="projects-images/men.jpg />
+</div>
+
+<button class="test-btn">
+ Click ME
+</button>
+
+<div class="sample">
+<input type="text" placeholder="Enter your name" ><br>
+<input type="text" placeholder="Enter your phone number" ><br>
+<input type="text" placeholder="Enter your address" ><br>
+<input type="text" placeholder="Enter your city" ><br>
+</div>
+
+<div class = "list-fruits">
+<ol>
+  <li>Apple</li>
+   <li>Mango</li>
+    <li>Grapes</li>
+     <li>Banana</li>
+     <li>Strawberry</li>
+</ol>
+<div>
+
+<input type="checkbox">
+<label for="">checkMe</label>
+
+</body
+
+.test {
+width: 100px;
+height:100px;
+margin: 200px;
+}
+
+.test img {
+width:100%
+}
+
+.test:hover {
+width:200px;
+height:200px;
+}
+
+.test-btn {
+  width:100px;
+  height:50px;
+  border-radius:10px;
+  position:relative;
+  top:-300px;
+  left:500px;
+}
+.test-btn:active {
+ background-color:red;
+}
+
+.sample {
+position:relative;
+top:-300px;
+left:800px;
+}
+
+.sample input {
+width: 500px;
+height:50px;
+margin-bottom:10px;
+}
+
+.sample input :focus {
+background-color: aquamarine;
+}
+
+list-fruits ol li:first-child{
+  color:red;
+}
+
+list-fruits ol li:first-child{
+  color:red;
+}
+
+list-fruits ol li:nth-child(3){
+  color:red;
+}
+
+input[type=checkbox]:checked+label {
+color: red;
+font-size: larger;
+}
+
+===> active
+
+<div class = "test" >
+  <img src="projects-images/men.jpg />
+</div>
+
+.test {
+width: 100px;
+height:100px;
+margin: 200px;
+}
+
+.test img {
+width:100%
+}
+
+.test:hover {
+width:200px;
+height:200px;
+}
+
+pseudo elements 
+
+::before
+::after
+::first-letter
+::first-line
+::placeholder
+
+<body>
+<div class="test-message">
+  loreum is a hjklooooopp jjjkkk llll uuu oppobsx
+</div>
+
+<div>
+<input type="text" placeholder="Enter your phone number">
+</div>
+
+</body>
+
+.test-message p :: before{
+    content: "This is my Paragraph";
+    color: blue;
+}
+
+.test-message p :: after{
+    content: "End of the Paragraph";
+    color: blue;
+}
+
+.test-message p::first-letter{
+  color: darkmagenta;
+}
+.test-message p::first-line{
+  color: red;
+}
+
+input::placeholder {
+color: brown;
+}
+
+
+Gradien Effect
+
+linear-gradient()
+radial-gradient()
+
+<body>
+ <div class="sample-box">
+    <h2>Gradient Effect</h2>
+  </div>
+<div class="sample-two">
+    <h2>Radial Effect</h2>
+  </div>
+</body>
+
+.sample-box{
+background: linear-gradient(to right,pink,lightblue)
+height: 300px;
+}
+
+.sample-box{
+background: linear-gradient(to bottom,pink,lightblue,yellow)
+height: 300px;
+width:300px;
+}
+
+.sample-two {
+background: radial-gradient(circle,lightblue,rgb(0,109,128),rgb(192,189,17));
+height:100vh;
+}
+
+               Units
+
+-->pixels,percentage(%)
+--->rem,em //depend on fontsize
+--->vh,vw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
